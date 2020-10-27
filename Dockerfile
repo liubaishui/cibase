@@ -44,7 +44,7 @@ RUN apk --no-cache add \
     sed -i '/use_embedded_jre=true/d' /opt/sonar-scanner/bin/sonar-scanner && \
     # install docker client
     wget -qO "/tmp/docker-${DOCKER_VERSION}-ce.tgz" \
-        "https://mirror.azure.cn/docker-ce/linux/static/stable/x86_64/docker-${DOCKER_VERSION}-ce.tgz" && \
+        "https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-${DOCKER_VERSION}-ce.tgz" && \
     echo "${DOCKER_SHA256}  /tmp/docker-${DOCKER_VERSION}-ce.tgz" | sha256sum -c - && \
     tar zxf "/tmp/docker-${DOCKER_VERSION}-ce.tgz" -C /tmp && \
     mv /tmp/docker/docker /usr/bin && \
