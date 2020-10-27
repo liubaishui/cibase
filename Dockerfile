@@ -1,4 +1,4 @@
-FROM gcr.mirrors.ustc.edu.cn/kaniko-project/executor:v1.2.0 AS kaniko
+FROM gcr.io/kaniko-project/executor:v1.2.0 AS kaniko
 FROM sonarsource/sonar-scanner-cli:4.3 AS sonar-scanner-cli
 FROM maven:3-jdk-8-alpine
 
